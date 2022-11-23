@@ -10,10 +10,10 @@ const arr = [] ;
  
 
 if (namSub.value.length === 0) {
-    resultNameSub.innerHTML="Please choose your Last Name"
+    resultNameSub.innerHTML='<i class="fa-solid fa-circle-exclamation"></i>Please choose your Last Name'
     resultNameSub.style.color = "red";
 } else if( namSub.value.length > 15 ){
-    resultNameSub.innerHTML="il ya plus de 15 charactere"
+    resultNameSub.innerHTML='<i class="fa-solid fa-circle-exclamation"></i> il ya plus de 15 charactere'
     resultNameSub.style.color = "red";
 } else if( regNamSub.test(namSub.value) === false ){
     resultNameSub.innerHTML="seules les lettres sont autorisees"

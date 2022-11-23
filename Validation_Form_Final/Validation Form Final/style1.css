@@ -33,15 +33,6 @@ h3 {
     padding-bottom: 5px;
 }
 
-main {
-}
-/* main #sol {
-    width: 500px;
-    background: url(images/solicode.jpg)center center/cover;
-    /* filter: grayscale(100%); */
-    /* padding: 10px; */
-    /* height: 100vh; */
-/* }  */
 section {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     /* background-color: #fff; */
@@ -119,11 +110,22 @@ section .inp input {
 }
 
 /* style Groupe */
+
+#Groupe label {
+    color: #eee;
+}
 #Groupe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;   
 }
+label:hover {
+    color: #F49D1A;
+}
+#Groupe label:hover {
+    color: #F49D1A;
+}
+
 #Groupe h3 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -207,4 +209,12 @@ select option:hover {
 #button:hover {
     background-color: #a6aF13;
     color: #eee;
+}
+
+
+/* Responsive designer */
+@media only screen and (max-width:500px) {
+    section #inp {
+        display: block;
+    }
 }
