@@ -2,9 +2,8 @@
 // ------------------------=== Validation Name ------------------------------------------
 let nam = document.querySelector("#name");
 let regNam = /^[a-zA-\s]+$/i;
-
-
 let resultName = document.getElementById("result-name")
+
 nam.onblur = function () {
         resultName.innerHTML = ""
     if (nam.value.match(regNam)) {
@@ -165,7 +164,7 @@ if (Prénom.value.length === 0) {
 // Validation email 
 let Email = document.getElementById("Email");
 let resultEmail = document.getElementById("result-Email");
-let regEmail = /\w+@gmail.com/ig;
+let regEmail = /\w+@gmail.com/i;
 
 if (Email.value.length === 0) {
     resultEmail.innerHTML="Please choose your Email"
@@ -181,7 +180,6 @@ if (Email.value.length === 0) {
 // Validation phone number
 let phoneNumber = document.getElementById("phone-number");
 let resultPhone = document.getElementById("result-phone");
-// let regPhone = /^[(07|06|05)\d]{8,8}/
 let regPhone = /(07|06|05)[0-9]{8,}/
 
 
