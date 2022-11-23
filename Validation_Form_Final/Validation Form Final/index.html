@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK FONT  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+    rel="stylesheet">
+    <!-- link CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style1.css">
+    <title>Clubs Solicode</title>
+</head>
+<body>
+    <main>
+    <h2>inscription sur <span>Clube solicod</span></h2>
+        <section>
+            <div id="img-solicode">
+                <!-- <img src="images/solicode.jpg" alt="" srcset=""> -->
+            </div>
+            <form id="form" action="main.html">
+                <div class="inp">
+                    <div id="Name-grid">
+                        <label>Name*:</label><br>
+                        <input placeholder="Enter your Name" id="name"><br>
+                        <p id="result-name"></p>
+                    </div>
+                    <div id="Prénom-grid">
+                        <label>Prénom*:</label><br>
+                        <input placeholder="Enter your Prénom" id="Prénom"><br>
+                        <p id="result-Prénom"></p>
+                    </div>
+                    <div id="Email-grid">
+                        <label id="email">Email*:</label><br>
+                        <input placeholder="Enter your Email" id="Email"><br>
+                        <p id="result-Email"></p>
+                    </div>
+                    <div id="Phone-grid">
+                        <label>phone number*:</label><br>
+                        <input placeholder="Enter a phone number" id="phone-number">
+                        <p id="result-phone"></p>
+                    </div>
+                </div>
+                <div id="genre">
+                    <h3>Genre*:</h3>
+                    <div id="gen-grid">
+                        <label><input type="radio" name="gen"> Féminin </label><br>
+                        <label><input type="radio" name="gen"> Masculin</label>
+                    </div>
+                    <div id="resultGenre"></div>
+                    <p id="re"></p>
+                </div>
+                <div id="Groupe">
+                    <h3>Groupe*:</h3>                    
+                    <label id="Groupe1"><input type="checkbox" class="Groupe" onclick="return chkGroupe()"> DW101</label><br> 
+                    <label id="Groupe2"><input type="checkbox" class="Groupe" onclick="return chkGroupe()"> DW102</label>
+                    <label id="Groupe3"><input type="checkbox" class="Groupe" onclick="return chkGroupe()"> DW103</label><br>
+                    <label id="Groupe4"><input type="checkbox" class="Groupe" onclick="return chkGroupe()">DM101</label>
+                    <label id="Groupe5"> <input type="checkbox" class="Groupe" onclick="return chkGroupe()">DM102</label>
+                    <p id="res-group"></p>
+                </div>
+                <div id="Club">
+                    <h3>Club(s)*:</h3>
+                    <select id="sel" multiple>
+                        <option value="Informatique"  >Informatique</option>
+                        <option value="Robotique"  >Robotique</option>
+                        <option value="Jeu d'échecs"  >Jeu d'échecs</option>
+                        <option value="Musique"  >Musique</option>
+                        <option value="Foot"  >Foot</option>
+                        <option value="Théatre"  >Théatre</option>
+                    </select>
+                    <p id="resultClub"></p>
+                </div>
+                <input type="submit" id="button" value="SIgn In">
+            </form>
+        </section>
+    </main>
+<!-- link JS -->
+    <script src="script.js"></script>
+</body>
+</html>
