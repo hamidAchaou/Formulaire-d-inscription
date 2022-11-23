@@ -1,7 +1,6 @@
 "use strict";
 // ------------------------=== Validation Name ------------------------------------------
 let nam = document.querySelector("#name");
-// let regNam = /[a-z]{1,30}/i;
 let regNam = /^[a-zA-\s]+$/i;
 
 
@@ -9,7 +8,6 @@ let resultName = document.getElementById("result-name")
 nam.onblur = function () {
         resultName.innerHTML = ""
     if (nam.value.match(regNam)) {
-        // nam.style.borderColor = "green"
         nam.style.border = "2px solid green"
     }else {
         resultName.innerHTML = "pleas enter your Name"
@@ -67,60 +65,7 @@ phoneNumber.onblur = function () {
     }
 }
 
-// ------------------------=== cheacked Genre ------------------------------------------
-
-// function onGener() {
-//     let Genre = document.querySelectorAll(".gen");
-//     let re = document.getElementById("#re");
-//     let con = 0;
-
-//     for (let k = 0; k < Genre.length; k++) {
-//         if (Genre[k].checked == true) {
-//             con++
-//         }
-//     }
-//     if (con > 1) {
-//         re.innerHTML = "";
-//         return false;
-//     } else {
-//         re.innerHTML = "please select a mode of payement";
-//     }
-// }
-
-// let form = document.getElementById("form");
-// form.addEventListener("submit", (error) => {
-//     let Masculin = document.getElementById("Masculin");
-//     let Féminin = document.getElementById("Féminin");
-
-//     if (Masculin.checked == false && Féminin.checked == false) {
-//         error.preventDefault();
-//         let messGener = document.getElementById("messGener");
-//         messGener.innerText = "please checked one element"
-//         messGener.style.color = "red";
-//     } else {
-//         return true
-//     }
-// });
-// function onGener() {
-//     let Genre = document.querySelectorAll(".gen");
-//     let re = document.querySelectorAll(".re");
-
-//     var valid = false;
-
-//     for (let k = 0; k < Genre.length; k++) {
-//         if (Genre[k].checked == true) {
-//             valid = true;
-//             break;
-//         }
-//     }
-//     if (valid) {
-//         re.innerHTML = "";
-//     }
-//     else {
-//         re.innerHTML = "please select a mode of payement";
-//         return false;
-//     }
-// }
+// ------------------------ cheacked Genre ------------------------------------------
 
 
 // ------------------------=== cheacked Groupe ------------------------------------------
