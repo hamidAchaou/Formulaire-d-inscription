@@ -11,67 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
         rel="stylesheet">
     <!-- link CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <link rel="stylesheet" href="style1.css">
     <title>Clubs Solicode</title>
 </head>
 
 <body>
     <main>
+        <h2>inscription sur <span>Clube solicod</span></h2>
         <section>
-            <h2>inscription sur Clube solicod</h2>
+            <div id="img-solicode">
+            </div>
             <form id="form" action="main.html">
                 <div class="inp">
-                    <label>Name</label><br>
-                    <input placeholder="Enter your Name" id="name"><br>
-                    <p id="result-name"></p>
-                    <label>Prénom</label><br>
-                    <input placeholder="Enter your Prénom" id="Prénom"><br>
-                    <p id="result-Prénom"></p>
-                    <label id="email">Email</label><br>
-                    <input placeholder="Enter your Email" id="Email"><br>
-                    <p id="result-Email"></p>
-                    <label>phone number</label><br>
-                    <input placeholder="Enter a phone number" id="phone-number">
-                    <p id="result-phone"></p>
+                    <div id="Name-grid">
+                        <label>Name*:</label><br>
+                        <input placeholder="Enter your Name" id="name"><br>
+                        <p id="result-name"></p>
+                    </div>
+                    <div id="Prénom-grid">
+                        <label>Prénom*:</label><br>
+                        <input placeholder="Enter your Prénom" id="Prénom"><br>
+                        <p id="result-Prénom"></p>
+                    </div>
+                    <div id="Email-grid">
+                        <label id="email">Email*:</label><br>
+                        <input placeholder="Enter your Email" id="Email"><br>
+                        <p id="result-Email"></p>
+                    </div>
+                    <div id="Phone-grid">
+                        <label>phone number*:</label><br>
+                        <input placeholder="Enter a phone number" id="phone-number">
+                        <p id="result-phone"></p>
+                    </div>
                 </div>
                 <div id="genre">
-                    <h3>Genre</h3>
-                    <input type="radio" name="gen">
-                    <label>Féminin</label><br>
-                    <input type="radio" name="gen">
-                    <label>Masculin</label>
+                    <h3>Genre*:</h3>
+                    <div id="gen-grid">
+                        <label><input type="radio" name="gen"> Féminin </label><br>
+                        <label><input type="radio" name="gen"> Masculin</label>
+                    </div>
                     <div id="resultGenre"></div>
                     <p id="re"></p>
                 </div>
-                <div>
-                    <h3>Groupe</h3>
-                    <input type="checkbox" class="Groupe" onclick="return chkGroupe()">
-                    <label>DW101</label><br>
-                    <input type="checkbox" class="Groupe" onclick="return chkGroupe()">
-                    <label>DW102</label>
-                    <input type="checkbox" class="Groupe" onclick="return chkGroupe()">
-                    <label>DW103</label><br>
-                    <input type="checkbox" class="Groupe" onclick="return chkGroupe()">
-                    <label>DM101</label>
-                    <input type="checkbox" class="Groupe" onclick="return chkGroupe()">
-                    <label>DM102</label>
+                <div id="Groupe">
+                    <h3>Groupe*:</h3>
+                    <label id="Groupe1"><input type="radio" class="Groupe" onclick="return chkGroupe()" name="group">
+                        DW101</label><br>
+                    <label id="Groupe2"><input type="radio" class="Groupe" onclick="return chkGroupe()" name="group">
+                        DW102</label>
+                    <label id="Groupe3"><input type="radio" class="Groupe" onclick="return chkGroupe()" name="group">
+                        DW103</label><br>
+                    <label id="Groupe4"><input type="radio" class="Groupe" onclick="return chkGroupe()" name="group">DM101</label>
+                    <label id="Groupe5"> <input type="radio" class="Groupe"
+                            onclick="return chkGroupe()" name="group">DM102</label>
                     <p id="res-group"></p>
                 </div>
-                <div>
-                    <h3>Club(s)</h3>
+                <div id="Club">
+                    <h3>Club(s)*:</h3>
                     <select id="sel" multiple>
-                        <option value="Informatique" class="club">Informatique</option>
-                        <option value="Robotique" class="club">Robotique</option>
-                        <option value="Jeu d'échecs" class="club">Jeu d'échecs</option>
-                        <option value="Musique" class="club">Musique</option>
-                        <option value="Foot" class="club">Foot</option>
-                        <option value="Théatre" class="club">Théatre</option>
+                        <option value="Informatique">Informatique</option>
+                        <option value="Robotique">Robotique</option>
+                        <option value="Jeu d'échecs">Jeu d'échecs</option>
+                        <option value="Musique">Musique</option>
+                        <option value="Foot">Foot</option>
+                        <option value="Théatre">Théatre</option>
                     </select>
                     <p id="resultClub"></p>
                 </div>
-
-                <input type="submit" id="button">
+                <input type="submit" id="button" value="SIgn In">
             </form>
         </section>
     </main>
