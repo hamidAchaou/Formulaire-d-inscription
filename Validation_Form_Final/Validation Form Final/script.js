@@ -1,7 +1,7 @@
 "use strict";
 // ------------------------=== Validation Name ------------------------------------------
 let nam = document.querySelector("#name");
-let regNam = /^[a-zA-\s]+$/i;
+let regNam = /[a-z\s]{3,30}$/i;
 let resultName = document.getElementById("result-name")
 
 nam.onblur = function () {
@@ -18,7 +18,7 @@ nam.onblur = function () {
 // ------------------------=== Validation Prénom ------------------------------------------
 let Prénom = document.getElementById("Prénom");
 let resultPrébom = document.getElementById("result-Prénom");
-let regPrénom = /[a-z]{1,30}/i
+let regPrénom = /[a-z\s]{3,30}$/i;
 
 Prénom.onblur = function () {
 resultPrébom.innerHTML = "";
@@ -52,7 +52,7 @@ Email.onblur = function () {
 // ------------------------=== Validation phone number ------------------------------------------
 let phoneNumber = document.getElementById("phone-number");
 let resultPhone = document.getElementById("result-phone");
-let regPhone = /(07|06|05)[0-9]{8,}/
+let regPhone = /(07|06|05)[0-9]{8}/
 phoneNumber.onblur = function () {
     if (phoneNumber.value.match(regPhone)) {
         phoneNumber.style.borderColor = "green"
@@ -91,11 +91,7 @@ function chkGroupe() {
     }
 }
 
-
 // ------------------------===-- checked Club --------------------------------------------
-
-
-
 function chkClub() {
     let allClub = document.querySelectorAll(".club");
     let selectid = 0;
@@ -124,7 +120,7 @@ document.getElementById("button").onclick = function(e){
 // Validation name
 let resultNameSub = document.getElementById("result-name")
 let namSub = document.querySelector("#name");
-let regNamSub = /^[a-zA-\s]+$/i;
+let regNamSub = /[a-z\s]{3,15}$/i;
 const arr = [] ;
  
 
@@ -145,7 +141,7 @@ if (namSub.value.length === 0) {
 // Validation prénom
 let Prénom = document.getElementById("Prénom");
 let resultPrébom = document.getElementById("result-Prénom");
-let regPrénom = /[a-z]{1,30}/i
+let regPrénom = /[a-z\s]{3,15}$/i;;
 
 if (Prénom.value.length === 0) {
     resultPrébom.innerHTML="Please choose your First name"
@@ -180,7 +176,7 @@ if (Email.value.length === 0) {
 // Validation phone number
 let phoneNumber = document.getElementById("phone-number");
 let resultPhone = document.getElementById("result-phone");
-let regPhone = /(07|06|05)[0-9]{8,}/
+let regPhone = /(07|06|05)[0-9]{8}/
 
 
 if (phoneNumber.value.length === 0) {
@@ -228,16 +224,6 @@ if(chec === false){
         resGroup.innerHTML=" " ;
         arr.push(true);
     }
-    let tester2 = false ;
-    let num = 0 ;
-    for(let i = 0 ; i < allClub.length ; i++){
-        // console.log(i);
-        if (allClub[i].checked === true) {
-            tester2 = true ;
-            num += 1 ;
-        }
-    }
-
 
 //cheacked Club
 let resultClub = document.querySelector("#resultClub");

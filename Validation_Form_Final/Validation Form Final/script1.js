@@ -5,7 +5,7 @@ document.getElementById("button").onclick = function(e){
 // Validation name
 let resultNameSub = document.getElementById("result-name")
 let namSub = document.querySelector("#name");
-let regNamSub = /^[a-zA-\s]+$/i;
+let regNamSub = /^[a-z\s]{2,30}$/i;
 const arr = [] ;
  
 
@@ -62,7 +62,7 @@ if (Email.value.length === 0) {
 let phoneNumber = document.getElementById("phone-number");
 let resultPhone = document.getElementById("result-phone");
 // let regPhone = /^[(07|06|05)\d]{8,8}/
-let regPhone = /(07|06|05)[0-9]{8,}/
+let regPhone = /(07|06|05)[0-9]{8}/
 
 
 if (phoneNumber.value.length === 0) {
