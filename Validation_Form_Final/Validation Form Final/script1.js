@@ -110,8 +110,7 @@ if(chec === false){
         resGroup.innerHTML=" " ;
         arr.push(true);
     }
-    let tester2 = false ;
-    let num = 0 ;
+
     for(let i = 0 ; i < allClub.length ; i++){
         // console.log(i);
         if (allClub[i].checked === true) {
